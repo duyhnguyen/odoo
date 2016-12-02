@@ -848,7 +848,7 @@
 
         <menuitem
             id="account_report_folder"
-            name="Reports"
+            name="Reporting"
             parent="account_account_menu"
             groups="account.group_account_manager"
             sequence="4"/>
@@ -1349,6 +1349,10 @@
                         </page>
                     </notebook>
                     </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
                 </form>
             </field>
         </record>
