@@ -18,7 +18,6 @@ class Message(models.Model):
         comments (OpenChatter discussion) and incoming emails. """
     _name = 'mail.message'
     _description = 'Message'
-    _inherit = ['ir.needaction_mixin']
     _order = 'id desc'
     _rec_name = 'record_name'
 
@@ -133,10 +132,6 @@ class Message(models.Model):
         if operator == '=' and operand:
             return [('starred_partner_ids', 'in', [self.env.user.partner_id.id])]
         return [('starred_partner_ids', 'not in', [self.env.user.partner_id.id])]
-
-    @api.model
-    def _needaction_domain_get(self):
-        return [('needaction', '=', True)]
 
     #------------------------------------------------------
     # Notification API
@@ -718,8 +713,9 @@ class Message(models.Model):
 
         message = super(Message, self).create(values)
 
-        message._notify(force_send=self.env.context.get('mail_notify_force_send', True),
-                        user_signature=self.env.context.get('mail_notify_user_signature', True))
+        if not self.env.context.get('message_create_from_mail_mail'):
+            message._notify(force_send=self.env.context.get('mail_notify_force_send', True),
+                            user_signature=self.env.context.get('mail_notify_user_signature', True))
         return message
 
     @api.multi

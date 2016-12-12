@@ -56,7 +56,7 @@ class Lead(FormatAddress, models.Model):
     _name = "crm.lead"
     _description = "Lead/Opportunity"
     _order = "priority desc,date_action,id desc"
-    _inherit = ['mail.thread', 'ir.needaction_mixin', 'utm.mixin']
+    _inherit = ['mail.thread', 'utm.mixin']
     _mail_mass_mailing = _('Leads / Opportunities')
 
     def _default_probability(self):
@@ -313,7 +313,7 @@ class Lead(FormatAddress, models.Model):
             vals.update(self._onchange_stage_id_values(vals.get('stage_id')))
         if vals.get('probability') >= 100 or not vals.get('active', True):
             vals['date_closed'] = fields.Datetime.now()
-        elif vals.get('probability') < 100:
+        elif 'probability' in vals and vals['probability'] < 100:
             vals['date_closed'] = False
         return super(Lead, self).write(vals)
 
