@@ -215,13 +215,13 @@ msgstr ""
 "                            </p>\n"
 "                            <p dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-bottom:8pt;\">\n"
 "                                <span>Chúng tôi sẵn lòng trợ giúp bạn trên con đường bạn đi. Liên hệ với chúng tôi qua \n"
-"                                <a href=\"mailto:support@ma.tvtmarine.com\"><span style=\"text-decoration:underline;\">\n"
-"                                mailto:support@ma.tvtmarine.com</span></a> nếu có bất kỳ câu hỏi. Bạn cũng có thể khám phá \n"
+"                                <a href=\"mailto:support@dna.com.vn\"><span style=\"text-decoration:underline;\">\n"
+"                                mailto:support@dna.com.vn</span></a> nếu có bất kỳ câu hỏi. Bạn cũng có thể khám phá \n"
 "                                kho tài liệu trực tuyến của chúng tôi tại </span>\n"
-"                                <a href=\"https://www.erponline.vn/vi/support/documentation\">\n"
+"                                <a href=\"https://www.idna.com.vn/vi/support/documentation\">\n"
 "                                <span style=\"text-decoration:underline;\">Tài liệu trực tuyến</span></a>\n"
 "                                </span><span> hoặc thông qua </span>\n"
-"                                <a href=\"https://www.erponline.vn/vi/discussions\">\n"
+"                                <a href=\"https://www.idna.com.vn/vi/discussions\">\n"
 "                                <span style=\"text-decoration:underline;\">Diễn đàn Hỏi & Đáp</span></a>\n"
 "                            </p>\n"
 "                            <br>\n"
@@ -296,7 +296,7 @@ msgstr ""
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner
 msgid "- The Odoo Team"
-msgstr "- The Odoo ERPOnline Team"
+msgstr "- The Odoo iDNA Team"
 
 #. module: project
 #: model:ir.ui.view,arch_db:project.project_planner

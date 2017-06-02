@@ -84,7 +84,7 @@
                             <label for="social_youtube"/>
                             <div name="social_youtube">
                                 <div class="oe_inline">
-                                    <field name="social_youtube" placeholder="https://www.youtube.com/user/OpenERPonline"/>
+                                    <field name="social_youtube" placeholder="https://www.youtube.com/user/OpeniDNA"/>
                                 </div>
                             </div>
                             <label for="social_googleplus"/>

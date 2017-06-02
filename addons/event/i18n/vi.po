@@ -2363,7 +2363,7 @@ msgstr ""
 #. module: event
 #: model:event.event,description:event.event_2
 msgid "events@openerp.com"
-msgstr "events@erponline.vn"
+msgstr "events@idna.com.vn"
 
 #. module: event
 #: model:ir.model,name:event.model_report_event_registration

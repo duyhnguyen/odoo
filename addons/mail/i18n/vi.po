@@ -194,7 +194,7 @@ msgstr ""
 "    </a>\n"
 "    % endif\n"
 "    sử dụng\n"
-"    <a href=\"https://www.erponline.vn\" style=\"text-decoration:none; color: #875A7B;\">Odoo ERPOnline</a>.\n"
+"    <a href=\"https://www.idna.com.vn\" style=\"text-decoration:none; color: #875A7B;\">Odoo iDNA</a>.\n"
 "</p>\n"
 "</div>"
 
@@ -4870,7 +4870,7 @@ msgstr "đã được chỉnh sửa"
 #. module: mail
 #: model:ir.ui.view,arch_db:mail.view_general_configuration_mail_alias_domain
 msgid "mycompany.odoo.com"
-msgstr "mycompany.erponline.com"
+msgstr "mycompany.iDNA.com"
 
 #. module: mail
 #. openerp-web
